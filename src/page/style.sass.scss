@@ -1,0 +1,159 @@
+// variables.scss
+$light-blue: #7fc4ed;
+$dark-blue: #659aba;
+$color-font: #1f2128;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 102px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-blue;
+  padding: 32px 42px;
+  border-radius: 20px;
+  color: $color-font;
+}
+
+.percent {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.water-icon {
+  height: 150px;
+  margin-block: 40px 32px;
+  margin-inline: 13px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 9px;
+  line-height: 100%;
+}
+
+.right-container {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goal {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.range-title {
+  color: $light-blue;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 9px;
+  line-height: 100%;
+}
+
+.quantity {
+  color: #4e4964;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.daily-goal,
+.amount-per-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-daily-goal,
+.title-amount-per-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container .time {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 32px;
+  color: #fbf9fe;
+
+  border-radius: 10px;
+  border: 1px solid var(--base-gray-200, #322f40);
+  background: var(--base-gray-400, #1d1b26);
+}
+
+.timer-container .time:focus {
+  border: 1px solid $light-blue;
+}
+
+.colons-icons {
+  padding-inline: 13px;
+}
+.hours-style {
+  color: #322f40;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 4px;
+}
+
+.start-button {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: $light-blue;
+  border: none;
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: $dark-blue;
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Remove a aparência padrão */
+  border-radius: 15px;
+  height: 6px;
+  background: $light-blue;
+  border-radius: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove a aparência padrão do "thumb" */
+  width: 18px;
+  height: 18px;
+  background-color: $light-blue;
+  border-radius: 60px;
+}
